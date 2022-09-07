@@ -42,8 +42,9 @@
 
         <div class="palabras">
             <div class="palabras-enunciado">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum natus optio commodi? Repudiandae
-                    dolores, illum facere temporibus voluptates asperiores est
+                <p>Desarrolle un programa en el que el usuario ingrese una temperatura en grados y por
+                    medio de dos listas desplegables seleccione, Vas a convertir de y Deseas convertir a. (Las
+                    opciones son Fahrenheit, Celsius y Kelvin)
                 </p>
                 <hr>
             </div>
@@ -51,35 +52,42 @@
                 <form action="">
                     <div class="palabras-input">
                         <label for="">Temperatura</label>
-                        <input type="text">
+                        <input id="temperatura" type="number">
                     </div>
+
                     <div class="temperatura-opciones">
                         <div class="temperatura-opc1">
                             <label for="">Convertir de</label>
-                            <select>
-                                <option value="">Seleccione</option>
-                                <option value="">Fahrenheit,</option>
-                                <option value="">Celsius</option>
-                                <option value="">Kelvin</option>
+                            <select id="Convertir1">
+                                <option>Seleccione</option>
+                                <option value="1">Fahrenheit</option>
+                                <option value="2">Celsius</option>
+                                <option value="3">Kelvin</option>
                             </select>
                         </div>
                         <div class="temperatura-opc1">
                             <label for="">Convertir a</label>
-                            <select>
-                                <option value="">Seleccione</option>
-                                <option value="">Kelvin,</option>
-                                <option value="">Celsius</option>
-                                <option value="">Fahrenheit</option>
+                            <select id="Convertir2">
+                                <option >Seleccione</option>
+                                <option value="1">Fahrenheit</option>
+                                <option value="2">Celsius</option>
+                                <option value="3">Kelvin</option>
                             </select>
                         </div>
-                    </div>
 
+                    </div>
+                    <div class="palabras-botones">
+                        <button id="btntem">Calcular</button>
+
+                    </div>
                 </form>
             </div>
 
         </div>
 
     </div>
+
+    <script src="js/temperatura.js"></script>
 
 </body>
 
