@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -35,22 +36,73 @@
         </div>
     </nav>
 
-    <div class="contenido"> 
-        <div class="palabras-enunciado">
-            <p>Programa en el que el usuario pueda ingresar el valor de los tres lados de un
-                triángulo y le determine qué tipo de triángulo es (equilátero, isósceles, escaleno).
-            </p>
-            <hr>
+    <div class="contenido">
+        <div class="redi">
+            <a href="index.html"><i class="fa-solid fa-house-chimney-window"></i>Inicio</a>
         </div>
-        <div class="triangulo-formulario">
-            <form action="">
-                
-            </form>
+
+        <div class="palabras">
+            <div class="palabras-enunciado">
+                <p>Recopile los nombres y apellidos de los instructores del trimestre, así como la actividad
+                que orienta cada uno.
+                </p>
+                <hr>
+            </div>
+            <div class="palabras-formulario">
+                <form action="">
+
+                    <div class="profes-opciones">
+                        <div class="profes-opc1">
+                            <label for="">Nombre del Instructor</label>
+                        <select id="nom">
+                            <option>Seleccione</option>
+                            <option  value="1">Tatiana</option>
+                            <option value="2">Yaneth</option>
+                            <option value="3">Luis</option>
+                            <option value="4">Cristian</option>
+                            <option value="5">Fernando</option>
+                            <option value="6">Carolina</option>
+                        </select>
+                        </div>
+                        <div class="profes-opc1">
+                            <label for="">Apellido del Instructor</label>
+                            <select id="ape">
+                                <option>Seleccione</option>
+                                <option value="1">Cabrera</option>
+                                <option value="2">Castillo</option>
+                                <option value="3">Baquero</option>
+                                <option value="4">Buitrago</option>
+                                <option value="5">Galindo</option>
+                                <option value="6">Forero</option>
+                            </select>
+                        </div>
+                        <div class="profes-opc1">
+                            <label for="">Materia</label>
+                            <select id="mate">
+                                <option>Seleccione</option>
+                                <option value="1">js / Calidad</option>
+                                <option value="2">Gestion Ambiental</option>
+                                <option value="3">Cultura Fisica</option>
+                                <option value="4">PHP Avanzado</option>
+                                <option value="5">Bases de datos</option>
+                                <option value="6">Proyecto</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="palabras-botones">
+                        <button id="btnprof">Calcular</button>
+
+                    </div>
+                </form>
+            </div>
+
         </div>
 
     </div>
 
     <script src="js/instructores.js"></script>
+    
 
 </body>
 

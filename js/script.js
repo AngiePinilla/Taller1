@@ -3,7 +3,7 @@ let pa = document.getElementById("palabra");
 let lon = document.getElementById("lon");
 let May = document.getElementById("May");
 let Min = document.getElementById("Min");
-let Car = document.getElementById("Car");
+let Car = document.getElementById("Car"); 
 
 console.log(pa)
 console.log(lon)

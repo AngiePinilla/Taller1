@@ -3,7 +3,7 @@
 
 
 let btntem = document.getElementById("btntem");
-console.log(btntem)
+console.log(btntem) 
 
 
 function TempCalcular() {
