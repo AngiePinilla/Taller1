@@ -465,3 +465,12 @@ margin-top: 2em;
 .cerrarModal8:hover {
     cursor: pointer;
 }
+
+.cerrarModal9 {
+    font-size: 2rem;
+    float: right;
+}
+
+.cerrarModal9:hover {
+    cursor: pointer;
+}
