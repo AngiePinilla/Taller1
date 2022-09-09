@@ -56,11 +56,11 @@
                         <div class="card" style="width: 18rem;">
                             <img src=".." class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Circulo</h5>
+                                <h5 class="card-title">Cuadrado</h5>
                                 <p class="card-text">Some quick example text to build.
                                     content.</p>
                                 <a id="abrirModal" class="btn btn-primary">Promedio</a>
-                                <a href="#" class="btn btn-primary">Area</a>
+                                <a id="abrirModal2" class="btn btn-primary">Area</a>
                             </div>
                         </div>
                     </div>
@@ -69,11 +69,11 @@
                         <div class="card" style="width: 18rem;">
                             <img src=".." class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Cuadrado</h5>
+                                <h5 class="card-title">Circulo</h5>
                                 <p class="card-text">Some quick example text to build.
                                     content.</p>
-                                <a href="#" class="btn btn-primary">Promedio</a>
-                                <a href="#" class="btn btn-primary">Area</a>
+                                <a id="abrirModal3" class="btn btn-primary">Promedio</a>
+                                <a id="abrirModal4" class="btn btn-primary">Area</a>
                             </div>
                         </div>
                     </div>
@@ -85,8 +85,8 @@
                                 <h5 class="card-title">Rectangulo</h5>
                                 <p class="card-text">Some quick example text to build.
                                     content.</p>
-                                <a href="#" class="btn btn-primary">Promedio</a>
-                                <a href="#" class="btn btn-primary">Area</a>
+                                <a id="abrirModal5" class="btn btn-primary">Promedio</a>
+                                <a id="abrirModal6" class="btn btn-primary">Area</a>
                             </div>
                         </div>
                     </div>
@@ -98,8 +98,8 @@
                                 <h5 class="card-title">Triangulo</h5>
                                 <p class="card-text">Some quick example text to build.
                                     content.</p>
-                                <a href="#" class="btn btn-primary">Promedio</a>
-                                <a href="#" class="btn btn-primary">Area</a>
+                                <a id="abrirModal7" class="btn btn-primary">Promedio</a>
+                                <a id="abrirModal8" class="btn btn-primary">Area</a>
                             </div>
                         </div>
                     </div>
@@ -108,17 +108,101 @@
                 </div>
 
             </div>
-
+<!-- CUADRADO -->
             <div id="ventanaModal" class="modal">
-                <div class="contenidoModal">
-                   
-                    <h2>Perimetro <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span></h2>
+                <div class="contenidoModal">                   
+                    <h2>Perimetro de un cuadrado <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span></h2>
                     
                     <label>Lado del cuadrado</label>
-                    <input type="number" id="ladoCua">
+                    <input id="ladoCua" type="number">
                     <button id="btnCua">Calcular</button>
                 </div>
 
+            </div>
+
+            <div id="ventanaModal2" class="modal">
+                <div class="contenidoModal">
+                    <h2>Area de un cuadrado <span class="cerrarModal2"><i class="fa-solid fa-xmark"></i></span></h2>
+            
+                    <label>Lado del cuadrado</label>
+                    <input id="ladoCua2" type="number">
+                    <button id="btnCua2">Calcular</button>
+                </div>
+            
+            </div>
+<!-- CUADRADO -->
+
+<!-- CIRCULO -->
+            <div id="ventanaModal3" class="modal">
+                <div class="contenidoModal">
+                    <h2>Perimetro de circulo <span class="cerrarModal3"><i class="fa-solid fa-xmark"></i></span></h2>
+                    <label>Radio del circulo</label>
+                    <input type="number" id="radio">
+                    <button id="btnCua3">Calcular</button> 
+                </div>
+            </div>
+
+            <div id="ventanaModal4" class="modal">
+                <div class="contenidoModal">
+                    <h2>area de circulo <span class="cerrarModal4"><i class="fa-solid fa-xmark"></i></span></h2>
+                    <label>Radio del circulo</label>
+                    <input type="number" id="radio2">
+                    <button id="btnCua4">Calcular</button>
+                </div>
+            </div>
+<!-- CIRCULO -->
+
+<!-- RECTANGULO -->
+            <div id="ventanaModal5" class="modal">
+                <div class="contenidoModal">
+                    <h2>Perimetro de un rectangulo <span class="cerrarModal5"><i class="fa-solid fa-xmark"></i></span></h2>
+                    <label>Lado del rectangulo</label>
+                    <input type="number" id="ladoRec"><BR>
+                    <label>Base del rectangulo</label>
+                    <input type="number" id="BaseRec">
+                    <button id="btnCua5">Calcular</button>
+                </div>
+            </div>
+
+            <div id="ventanaModal6" class="modal">
+                <div class="contenidoModal">
+                    <h2>Area de un rectangulo <span class="cerrarModal6"><i class="fa-solid fa-xmark"></i></span></h2>
+                    <label>Lado del rectangulo</label>
+                    <input type="number" id="ladoRec2"><BR>
+                    <label>Base del rectangulo</label>
+                    <input type="number" id="BaseRec2">
+                    <button id="btnCua6">Calcular</button>
+                </div>
+            </div>
+<!-- RECTANGULO -->
+
+<!-- TRIANGULO -->
+            <div id="ventanaModal7" class="modal">
+                <div class="contenidoModal">
+                    <h2>Perimetro de un rectangulo <span class="cerrarModal7"><i class="fa-solid fa-xmark"></i></span></h2>
+                    <label>Lado 1 del triangulo</label>
+                    <input type="number" id="lt1"><BR>
+
+                    <label>Lado 2 del triangulo</label>
+                    <input type="number" id="lt2"><BR>
+
+                    <label>Lado 3 del triangulo</label>
+                    <input type="number" id="lt3"><BR>
+                    <button id="btnCua7">Calcular</button>
+                </div>
+            </div>
+
+            <div id="ventanaModal8" class="modal">
+                <div class="contenidoModal">
+                    <h2>Area de un rectangulo <span class="cerrarModal8"><i class="fa-solid fa-xmark"></i></span></h2>
+                    <label>Altura del triangulo</label>
+                    <input type="number" id="altr"><BR>
+            
+                    <label>Base del triangulo</label>
+                    <input type="number" id="bstr"><BR>
+    
+                    <button id="btnCua8">Calcular</button>
+                </div>
             </div>
 
         </div>
@@ -132,6 +216,7 @@
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
         crossorigin="anonymous"></script>
     <script src="js/figuras.js"></script>
+    <script src="js/figejer.js"></script>
     <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
 
 </body>
