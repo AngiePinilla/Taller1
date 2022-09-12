@@ -178,8 +178,8 @@ body {
 .inicio-botones {
     display: flex;
     flex-direction: column;
-    
-    
+
+
 }
 
 .inicio-botones .ini {
@@ -251,10 +251,10 @@ body {
     width: 20em;
 }
 
-label{
+label {
     font-family: 'Albert Sans', sans-serif;
-        font-size: 1.5em;
-        margin-bottom: 0.5em;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
 }
 
 .palabras-input label {
@@ -297,8 +297,9 @@ label{
     flex-direction: column;
     margin-bottom: 1em;
     align-items: center;
-    
+
 }
+
 .temperatura-input label {
     font-family: 'Albert Sans', sans-serif;
     font-size: 1.5em;
@@ -324,10 +325,10 @@ label{
     display: flex;
     flex-direction: column;
     padding: 2.5em;
-  
+
 }
 
-.seleccionar{
+.seleccionar {
     width: 10em;
     border: none;
     font-size: 1em;
@@ -335,10 +336,10 @@ label{
     padding: 5px;
 }
 
-.seleccionar option{
+.seleccionar option {
     background-color: var(--cafeoscuro);
     color: var(--fondo);
-    
+
 }
 
 
@@ -531,13 +532,25 @@ label{
 }
 
 .contenidoModal {
-    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cafeclaro);
     width: 60%;
     margin: auto;
     position: relative;
     padding: 1rem;
+    border-radius: 10px;
     animation-name: animarmodal;
     animation-duration: 0.5s;
+}
+
+.contenidoModal input {
+    margin: 0.5em;
+    width: 50%;
+    height: 2em;
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
 }
 
 @keyframes animarmodal {
@@ -563,11 +576,29 @@ label{
 }
 
 .contenidoModal h2 {
-    background-color: blueviolet;
+    background-color: var(--cafeoscuro);
+    border-radius: 10px;
     color: #FFFFFF;
     padding: 1rem 0;
     text-align: center;
     clear: both;
+}
+
+.contenidoModal h2 span {
+    padding-right: 1em;
+}
+
+.contenidoModal button {
+    margin: 0.5em;
+    height: 2.5em;
+    border-radius: 8px;
+    font-family: 'Albert Sans',
+        sans-serif;
+    font-size: 1em;
+    border: none;
+    background-color: var(--rosa);
+    width: 50%;
+    align-self: center;
 }
 
 .cerrarModal2 {
