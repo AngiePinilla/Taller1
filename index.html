@@ -8,39 +8,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Document</title>
 </head>
 
 <body>
 
     <nav>
-        <div class="nav">
-            <div class="img">
-                <h2>JavaScript</h2>
-                <img src="img/nav.jpg" alt="nav">
-            </div>
-            <div class="pag">
-                <ul>
-                    <li><a href="index.html"><i class="fa-solid fa-house-chimney-window"></i>Inicio</a></li>
-                    <hr>
-                    <li><a href="Palabras.html"><i class="fa-solid fa-language"></i>Palabras</a></li>
-                    <li><a href="Temperatura.html"><i class="fa-solid fa-temperature-high"></i>Temperatura</a></li>
-                    <li><a href="Triangulo.html"><i class="fa-solid fa-shapes"></i>Triangulo</a></li>
-                    <li><a href="Instructures.html"><i class="fa-solid fa-chalkboard-user"></i>Instructores</a></li>
-                    <li><a href="Figuras.html"><i class="fa-solid fa-shapes"></i>Figuras</a></li>
-                    <li><a href="Formulario.html"><i class="fa-solid fa-file"></i> Formulario</a></li>
-                </ul>
-            </div>
+        <div class="logo">
+            <img src="img/logo3.jpg" alt="aaa">
+            <i class="fa-solid fa-bars hamburguer"></i>
+        </div>
+
+        <div class="menu ocultar">
+            <a href="index.html" class="item">Inicio</a>
+            <hr class="menu-hr" noshade="">
+            <a href="Palabras.html" class="item">Palabras</a>
+            <a href="Temperatura.html" class="item">Temperatura</a>
+            <a href="Figuras.html" class="item">Figuras</a>
+            <a href="Triangulo.html" class="item">Triangulo</a>
+            <a href="Instructures.html" class="item">Instructores</a>
+            <a href="Formulario.html" class="item">Formulario</a>
+           
+
         </div>
     </nav>
 
     <div class="contenido">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe harum possimus veniam eveniet pariatur quo
-            ipsam voluptate doloremque, necessitatibus dolor tempore maxime optio aspernatur quia doloribus iste commodi
-            fugit maiores.</p>
+        <div class="redi">
+            <a href="index.html"><i class="fa-solid fa-house-chimney-window"></i>Inicio</a>
+        </div>
+
+        <div class="palabras">
+            <div class="palabras-enunciado">
+                <p>Ejercicios
+                </p>
+                <hr>
+            </div>
+            <div class="palabras-formulario">
+                <form action="">
+
+                    <div class="inicio-botones">
+                        <a class="ini" href="Palabras.html">Palabras </a>
+                        <a class="ini" href="Temperatura.html">Temperatura </a>
+                        <a class="ini" href="Figuras.html">Figuras </a>
+                        <a class="ini" href="Triangulo.html">Triangulo </a>
+                        <a class="ini" href="Instructures.html">instructores </a>
+                        <a class="ini" href="Formulario.html">Formulario </a>
+
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
     </div>
 
+    <script src="js/p.js"></script>
 </body>
 
 </html>

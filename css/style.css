@@ -466,6 +466,7 @@ body {
     @keyframes animarmodal {
         from {
             top: -300px;
+            
             opacity: 0;
         }
 

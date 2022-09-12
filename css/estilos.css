@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&family=Fredoka+One&family=Mali&display=swap');
+
+:root {
+    --cafeoscuro: #a68069;
+    --cafeclaro: #bf9780;
+    --rosa: #d8af97;
+    --crema: #ecd6c0;
+    --fondo: #ffffeb;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media only screen and (min-width: 320px) {
+    /*BARRA DE NAVEGACION MODILE*/
+
+
+
+    .item {
+        padding: 1rem;
+    }
+
+    .logo {
+        background-color: var(--cafeclaro);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 1em;
+    }
+
+    .logo img {
+        width: 40%;
+        max-width: 200px;
+    }
+
+
+
+    .logo i {
+        color: var(--fondo);
+        font-size: 2rem;
+    }
+
+
+
+    .menu {
+        background-color: #bf9780d1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform .6s ease;
+    }
+
+    .menu-hr {
+        width: 90%;
+        border-color: var(--fondo);
+    }
+
+    .item {
+        padding: 1rem;
+    }
+
+
+
+    nav a {
+        color: var(--fondo);
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Fredoka One', cursive;
+        font-size: 1.2em;
+    }
+
+    /* nav a:hover {
+        background-color: #0B3860;
+        width: 100%;
+    } */
+
+    .navbar-button {
+        background-color: transparent;
+        border: none;
+        border-radius: 3px;
+        font-size: 1em;
+        padding: 0.5rem;
+        font-family: 'Marcellus', serif;
+        color: var(--fondo);
+    }
+
+    nav {
+        top: 0;
+        font-family: 'Marcellus', serif;
+        font-size: 1.3em;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+
+    }
+
+    .ocultar {
+        transform: translateY(-100em);
+    }
+
+    .open {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    /*BARRA DE NAVEGACION DESKTOP*/
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        background-color: var(--crema);
+
+    }
+
+    nav a {
+        color: var(--cafeoscuro);
+        font-family: 'Fredoka One', cursive;
+        font-size: 1.2em;
+    }
+
+    .logo {
+        background-color: var(--crema);
+    }
+
+    .logo img {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .logo i {
+        display: none;
+    }
+
+    .menu {
+        background-color: var(--crema);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        transform: translateY(0);
+    }
+
+    .menu-hr {
+        display: none;
+    }
+
+    .menu a:hover {
+        background-color: var(--rosa);
+        color: var(--fondo);
+        border-radius: 8px;
+    }
+
+
+
+}
+
+.contenido {
+    background-color: var(--cafeoscuro);
+    margin-top: 5em;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+
+.inicio-botones {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.inicio-botones .ini {
+    margin: 0.5em;
+    height: 2.5em;
+    border-radius: 8px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1em;
+    border: none;
+    background-color: var(--rosa);
+    text-decoration: none;
+    text-align: center;
+    width: 15em;
+}
+
+/*PALABRAS*/
+
+.redi {
+    display: none;
+    background-color: var(--crema);
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.redi a {
+    text-decoration: none;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+.palabras {
+    display: flex;
+    margin-top: 3em;
+    background-color: var(--crema);
+    padding: 1.5em;
+    border-radius: 1em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.palabras-enunciado {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-top: 1em;
+}
+
+.palabras-enunciado p {
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.palabras-enunciado hr {
+    margin: 1em;
+    margin-top: 1.5em;
+    border-color: var(--cafeoscuro);
+}
+
+.palabras-formulario {
+    display: flex;
+    margin: 1em;
+}
+
+.palabras-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    align-items: center;
+    width: 20em;
+}
+
+label{
+    font-family: 'Albert Sans', sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+}
+
+.palabras-input label {
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.palabras-input input {
+    width: 80%;
+    height: 2em;
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
+}
+
+.palabras-botones {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+
+.palabras-botones button {
+    margin: 0.5em;
+    height: 2.5em;
+    border-radius: 8px;
+    font-family: 'Albert Sans',
+        sans-serif;
+    font-size: 1em;
+    border: none;
+    background-color: var(--rosa);
+}
+
+/*PALABRAS*/
+
+/*TEMPERATURA*/
+.temperatura-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    align-items: center;
+    
+}
+.temperatura-input label {
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.temperatura-input input {
+    width: 80%;
+    height: 2em;
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
+}
+
+.temperatura-opciones {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.temperatura-opc1 {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em;
+  
+}
+
+.seleccionar{
+    width: 10em;
+    border: none;
+    font-size: 1em;
+    outline: none;
+    padding: 5px;
+}
+
+.seleccionar option{
+    background-color: var(--cafeoscuro);
+    color: var(--fondo);
+    
+}
+
+
+
+
+
+/*TEMPERATURA*/
+
+/*TRIANGULO*/
+
+.triangulo-formulario {
+    display: flex;
+    margin-top: 2em;
+}
+
+.triangulo-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.triangulo-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    align-items: center;
+    width: 15em;
+}
+
+.triangulo-input label {
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.triangulo-input input {
+    width: 80%;
+    height: 2em;
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
+}
+
+/*TRIANGULO*/
+
+/*PROFES*/
+
+.profes-opciones {
+    padding: 1em;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.profes-opc1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 2em;
+}
+
+/*PROFES*/
+
+/*FIGURAS*/
+
+.figuras-formulario {
+    display: flex;
+}
+
+.figuras-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.figura-card {
+    margin: 1em;
+}
+
+.fig1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*FIGURAS*/
+
+/*FORMULARIO*/
+
+.datos-formulario {
+    display: flex;
+    margin-top: 2em;
+}
+
+.datos-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.datos-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    align-items: center;
+    width: 15em;
+}
+
+.datos-input label {
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.datos-input input {
+    width: 80%;
+    height: 2em;
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1em;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.datos-input-aceptar {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+    align-items: center;
+    width: 15em;
+
+}
+
+.datos-input-aceptar label {
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.datos-input-aceptar input {
+    width: 20%;
+    height: 2em;
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
+}
+
+.terminos {
+    display: flex;
+    justify-content: center;
+}
+
+.seleccionar2 {
+    border: none;
+    font-size: 1em;
+    outline: none;
+    padding: 5px;
+}
+
+.seleccionar2 option {
+    background-color: var(--cafeoscuro);
+    color: var(--fondo);
+
+}
+
+/*FORMULARIO*/
+
+
+/*MODAL*/
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: auto;
+    padding-top: 200px;
+    display: none;
+}
+
+.contenidoModal {
+    background-color: #FFFFFF;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+    animation-name: animarmodal;
+    animation-duration: 0.5s;
+}
+
+@keyframes animarmodal {
+    from {
+        top: -300px;
+
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.cerrarModal {
+    font-size: 2rem;
+    float: right;
+}
+
+.cerrarModal:hover {
+    cursor: pointer;
+}
+
+.contenidoModal h2 {
+    background-color: blueviolet;
+    color: #FFFFFF;
+    padding: 1rem 0;
+    text-align: center;
+    clear: both;
+}
+
+.cerrarModal2 {
+    font-size: 2rem;
+    float: right;
+}
+
+.cerrarModal2:hover {
+    cursor: pointer;
+}
+
+.cerrarModal3 {
+    font-size: 2rem;
+    float: right;
+}
+
+.cerrarModal3:hover {
+    cursor: pointer;
+}
+
+.cerrarModal4 {
+    font-size: 2rem;
+    float: right;
+}
+
+.cerrarModal4:hover {
+    cursor: pointer;
+}
+
+.cerrarModal5 {
+    font-size: 2rem;
+    float: right;
+}
+
+.cerrarModal5:hover {
+    cursor: pointer;
+}
+
+.cerrarModal6 {
+    font-size: 2rem;
+    float: right;
+}
+
+.cerrarModal6:hover {
+    cursor: pointer;
+}
+
+.cerrarModal7 {
+    font-size: 2rem;
+    float: right;
+}
+
+.cerrarModal7:hover {
+    cursor: pointer;
+}
+
+.cerrarModal8 {
+    font-size: 2rem;
+    float: right;
+}
+
+.cerrarModal8:hover {
+    cursor: pointer;
+}
+
+.cerrarModal9 {
+    font-size: 2rem;
+    float: right;
+}
+
+.cerrarModal9:hover {
+    cursor: pointer;
+}
