@@ -19,7 +19,7 @@
             <img src="img/logo3.jpg" alt="aaa">
             <i class="fa-solid fa-bars hamburguer"></i>
         </div>
-    
+
         <div class="menu ocultar">
             <a href="index.html" class="item">Inicio</a>
             <hr class="menu-hr" noshade="">
@@ -29,8 +29,8 @@
             <a href="Triangulo.html" class="item">Triangulo</a>
             <a href="Instructures.html" class="item">Instructores</a>
             <a href="Formulario.html" class="item">Formulario</a>
-            
-    
+
+
         </div>
     </nav>
 
@@ -47,70 +47,159 @@
                 <hr>
             </div>
             <div class="datos-formulario">
-                <form action="">
+                <form action="" id="formulario">
+
                     <div class="datos-form">
                         <div class="columna">
-                            <div class="datos-input">
-                                <label for="">Tipo de documento</label>
-                                <select class="seleccionar2" name="" id="">
-                                    <option value="">seleccione</option>
-                                    <option value="">Tarjeta de identidad</option>
-                                    <option value="">Cedula de ciudadania</option>
-                                </select>
+
+                            <div class="formulario__grupo" id="grupo__tipo">
+                                <label for="tipo" class="formulario__label">Tipo de documento</label>
+
+                                <div class="formulario__grupo-input">
+                                    <select class="seleccionar2" class="formulario__input">
+                                        <option value="">seleccione</option>
+                                        <option value="">Tarjeta de identidad</option>
+                                        <option value="">Cedula de ciudadania</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="datos-input">
-                                <label for="">Numero de documento</label>
-                                <input type="text" placeholder="1035984729">
+
+                            <div class="formulario__grupo" id="grupo__documento">
+                                <label for="documento" class="formulario__label">Numero de documento</label>
+
+                                <div class="formulario__grupo-input">
+
+                                    <input class="formulario__input" name="documento" id="documento" type="text"
+                                        placeholder="1035984729">
+
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+
+                                </div>
+
+                                <p class="formulario__input-error">El numero de documento debe ser de 4 a 6 caracteres
+                    
+                                </p>
+
                             </div>
-                            <div class="datos-input">
-                                <label for="">Nombre</label>
-                                <input type="text" placeholder="Juan">
+
+                            <div class="formulario__grupo" id="grupo__nombre">
+                                <label for="nombre" class="formulario__label">Nombre</label>
+
+
+                                <div class="formulario__grupo-input">
+                                    <input class="formulario__input" name="nombre" id="nombre" type="text"
+                                        placeholder="Juan">
+
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">El nombre debe ser de 4 a 6 caracteres</p>
                             </div>
-                            <div class="datos-input">
-                                <label for="">Apellido</label>
-                                <input type="text" placeholder="Perez">
+
+                            <div class="formulario__grupo" id="grupo__apellido">
+
+                                <label for="apellido" class="formulario__label">Apellido</label>
+
+                                <div class="formulario__grupo-input">
+                                    <input class="formulario__input" name="apellido" id="apellido" type="text"
+                                        placeholder="Perez">
+
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+
+                                <p class="formulario__input-error">El apellido debe ser de 4 a 6 caracteres</p>
                             </div>
+
                         </div>
                         <div class="columna">
+
                             <div class="datos-input">
-                                <label for="">Fecha de nacimiento</label>
-                                <input type="date">
+                                <label for="fecha" class="formulario__label">Fecha de nacimiento</label>
+                                <input class="formulario__input" name="fecha" id="fecha" type="date">
                             </div>
-                            <div class="datos-input">
-                                <label for="">Correo Electronico</label>
-                                <input type="email" placeholder="correo@email.com">
+
+                            <div class="formulario__grupo" id="grupo__correo">
+
+                                <label for="correo" class="formulario__label">Correo Electronico</label>
+                                <div class="formulario__grupo-input">
+                                    <input class="formulario__input" name="correo" id="correo" type="email"
+                                        placeholder="correo@email.com">
+
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">Debe ser un correo Electronico</p>
+
                             </div>
-                            <div class="datos-input">
-                                <label for="">Password</label>
-                                <input type="password" placeholder="••••••">
+
+                            <div class="formulario__grupo" id="grupo__password">
+
+                                <label for="password" class="formulario__label">Password</label>
+
+                                <div class="formulario__grupo-input">
+                                    <input class="formulario__input" name="password" id="password" type="password"
+                                        placeholder="••••••">
+
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <p class="formulario__input-error">El contraseña debe ser de 4 a 6 caracteres</p>
+
                             </div>
-                            <div class="datos-input">
-                                <label for="">Comprobar Password</label>
-                                <input type="password" placeholder="••••••">
+
+                            <div class="formulario__grupo" id="grupo__password2">
+
+                                <label for="password2" class="formulario__label">Comprobar Password</label>
+
+                                <div class="formulario__grupo-input">
+
+                                    <input class="formulario__input" name="password2" id="password2" type="password"
+                                        placeholder="••••••">
+
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+
+                                </div>
+
+                                <p class="formulario__input-error">El contraseña debe ser igual</p>
+
                             </div>
+
+
                         </div>
 
                     </div>
-                    <div class="terminos">
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b>Rellene correctamente el formulario </p>
+                    </div>
+
+                  
+
+
+                    <div class="formulario__grupo" id="grupo__terminos">
+                        
                         <div class="datos-input-aceptar">
-                            <input id="abrirModal9" type="checkbox">
-                            <label for="">Aceptar condiciones</label>
                             
+                            <input class="formulario__checkbox" name="terminos" id="terminos" type="checkbox">
+                            <label for="">Aceptar condiciones</label>
+
                         </div>
 
                     </div>
-                    <div class="palabras-botones">
-                        <button>Enviar</button>
+                   
+
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                     </div>
+                    
                 </form>
             </div>
 
             <div id="ventanaModal9" class="modal">
                 <div class="contenidoModal">
                     <h2>Terminos y condiciones <span class="cerrarModal9"><i class="fa-solid fa-xmark"></i></span></h2>
-                    <label>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus amet minus atque dolorum esse, deserunt fugiat hic vel explicabo tempora iste ad! Animi ad odit, repellendus maiores fugiat neque vero?</label>
+                    <label>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus amet minus atque dolorum
+                        esse, deserunt fugiat hic vel explicabo tempora iste ad! Animi ad odit, repellendus maiores
+                        fugiat neque vero?</label>
                     <button>Aceptar</button>
-                    
+
                 </div>
             </div>
 
@@ -118,7 +207,8 @@
     </div>
 
     <script src="js/form.js"></script>
-    <script src="js/p.js"></script>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
 </body>
 

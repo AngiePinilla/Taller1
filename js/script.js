@@ -6,13 +6,14 @@ let Min = document.getElementById("Min");
 let Car = document.getElementById("Car"); 
 
 console.log(pa)
-console.log(lon)
+console.log(lon) 
 
 function letras() {
     let a = pa.value;
     let l = pa.value.length;
-    alert(`La longitud de la palabra ${a} es ${l}`);
+    //alert(`La longitud de la palabra ${a} es ${l}`);
     console.info(`La longitud de la palabra ${a} es ${l}`);
+    Swal.fire( `La longitud de la palabra ${a} es ${l}` )
 }
 lon.addEventListener('click', letras);
 

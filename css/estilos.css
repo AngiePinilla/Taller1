@@ -111,6 +111,100 @@ body {
     .open {
         transform: translateY(0);
     }
+
+    .redi {
+        display: none;
+        background-color: var(--crema);
+        border-radius: 1em;
+        padding: 0.5em;
+    }
+    
+    .redi a {
+        text-decoration: none;
+        font-family: 'Albert Sans', sans-serif;
+    }
+    
+    .palabras {
+        display: flex;
+        margin-top: 3em;
+        background-color: var(--crema);
+        padding: 1.5em;
+        border-radius: 1em;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .palabras-enunciado {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin-top: 1em;
+    }
+    
+    .palabras-enunciado p {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    
+    .palabras-enunciado hr {
+        margin: 1em;
+        margin-top: 1.5em;
+        border-color: var(--cafeoscuro);
+    }
+    
+    .palabras-formulario {
+        display: flex;
+        margin: 1em;
+    }
+    
+    .palabras-input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+        align-items: center;
+        width: 20em;
+    }
+    
+    label {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    .palabras-input label {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    .palabras-input input {
+        width: 80%;
+        height: 2em;
+        border-radius: 0.3em;
+        border: none;
+        outline: none;
+    }
+    
+    .palabras-botones {
+        display: flex;
+        flex-direction: column;
+        padding-right: 1.5em;
+        padding-left: 1.5em;
+    }
+    
+    .palabras-botones button {
+        margin: 0.5em;
+        height: 2.5em;
+        border-radius: 8px;
+        font-family: 'Albert Sans',
+            sans-serif;
+        font-size: 1em;
+        border: none;
+        background-color: var(--rosa);
+    }
+    
+    /*PALABRAS*/
 }
 
 @media screen and (min-width: 1024px) {
@@ -162,6 +256,101 @@ body {
         color: var(--fondo);
         border-radius: 8px;
     }
+
+
+    .redi {
+        display: none;
+        background-color: var(--crema);
+        border-radius: 1em;
+        padding: 0.5em;
+    }
+    
+    .redi a {
+        text-decoration: none;
+        font-family: 'Albert Sans', sans-serif;
+    }
+    
+    .palabras {
+        display: flex;
+        margin-top: 3em;
+        background-color: var(--crema);
+        padding: 1.5em;
+        border-radius: 1em;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .palabras-enunciado {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin-top: 1em;
+    }
+    
+    .palabras-enunciado p {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    
+    .palabras-enunciado hr {
+        margin: 1em;
+        margin-top: 1.5em;
+        border-color: var(--cafeoscuro);
+    }
+    
+    .palabras-formulario {
+        display: flex;
+        margin: 1em;
+    }
+    
+    .palabras-input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+        align-items: center;
+        width: 20em;
+    }
+    
+    label {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    .palabras-input label {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    .palabras-input input {
+        width: 80%;
+        height: 2em;
+        border-radius: 0.3em;
+        border: none;
+        outline: none;
+    }
+    
+    .palabras-botones {
+        display: flex;
+        flex-direction: column;
+        padding-right: 1.5em;
+        padding-left: 1.5em;
+    }
+    
+    .palabras-botones button {
+        margin: 0.5em;
+        height: 2.5em;
+        border-radius: 8px;
+        font-family: 'Albert Sans',
+            sans-serif;
+        font-size: 1em;
+        border: none;
+        background-color: var(--rosa);
+    }
+    
+    /*PALABRAS*/
 
 
 
@@ -469,8 +658,10 @@ label {
 
 .columna {
     display: flex;
+    width: 40%;
     flex-direction: column;
     justify-content: space-around;
+    margin-right: 1em;
 }
 
 .datos-input-aceptar {
@@ -478,7 +669,7 @@ label {
     flex-direction: row;
     margin-bottom: 1em;
     align-items: center;
-    width: 15em;
+    width: 100%;
 
 }
 
@@ -496,7 +687,7 @@ label {
     outline: none;
 }
 
-.terminos {
+#grupo__terminos {
     display: flex;
     justify-content: center;
 }
@@ -513,6 +704,139 @@ label {
     color: var(--fondo);
 
 }
+
+.formulario__grupo{
+    padding: 1em;
+}
+
+
+
+.formulario__label {
+	font-family: 'Albert Sans', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+    width: 100%;
+    height: 2em;
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1em;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 1em;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+    margin: 0.5em;
+    height: 2.5em;
+    border-radius: 8px;
+    font-family: 'Albert Sans',
+        sans-serif;
+    font-size: 1em;
+    border: none;
+    background-color: var(--rosa);
+    width: 90%;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
 
 /*FORMULARIO*/
 

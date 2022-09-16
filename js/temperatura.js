@@ -21,41 +21,41 @@ function TempCalcular() {
     if (Co1 == 1 && Co2 == 2) {
         let f = tem;
         let res = (f - 32) * 5 / 9;
-        alert(`f a c ${res}`)
+        alert(`fahrenheit a celsius ${res}`)
 
     } else if (Co1 == 1 && Co2 == 3) {
         let f = tem;
         let res = (f - 32) * 5 / 9 + 273.15;
 
-        alert(`f a k ${res}`)
+        alert(`fahrenheit a kelvin  ${res}`)
 
     } else if (Co1 == 2 && Co2 == 1) {
         let f = tem;
         let res = (f * 9 / 5) + 32;
 
-        alert(`c a f ${res}`)
+        alert(`celsius a fahrenheit ${res}`)
 
     } else if (Co1 == 2 && Co2 == 3) {
         let f = tem;
         f = parseInt(f)
         let res = (f + 273.15);
 
-        alert(`c a k ${res}`)
+        alert(`celsius a kelvin  ${res}`)
 
     } else if (Co1 == 3 && Co2 == 1) {
         let f = tem;
         let res = (f - 273.15) * 9 / 5 + 32;
 
-        alert(`k a f ${res}`)
+        alert(`kelvin  a fahrenheit ${res}`)
 
     } else if (Co1 == 3 && Co2 == 2) {
         let f = tem;
         let res = (f - 273.15);
 
-        alert(`k a c ${res}`)
+        alert(`kelvin  a celsius ${res}`)
     }
     else {
-        alert(`No valido`)
+        Swal.fire('Any fool can use a computer')
     }
 
 

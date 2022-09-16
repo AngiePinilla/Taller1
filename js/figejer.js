@@ -6,7 +6,7 @@ function ParCua() {
     console.log(cua)
     let c = cua.value;
     let res = c * 4;
-    alert(`Perimetro Cuadrado ${res}`);
+    alert(`Perimetro del Cuadrado ${res}`);
 }
 
 btnCua.addEventListener('click', ParCua);
@@ -22,7 +22,7 @@ function AreaCua() {
     console.log(cua)
     let c = cua.value;
     let res = c * c;
-    alert(`area Cuadrado ${res}`);
+    alert(`area del Cuadrado ${res}`);
 }
 
 btnCua2.addEventListener('click', AreaCua);
@@ -36,7 +36,7 @@ function ParCir() {
     let c = cir.value;
     const $pi = 3.14;
     let res = 2 * $pi * c;
-    alert(`Perimetro Circulo ${res}`);
+    alert(`Perimetro del Circulo ${res}`);
 }
 
 btnCua3.addEventListener('click', ParCir);
@@ -49,7 +49,7 @@ function AreaCir() {
    
     const $pi = 3.14;
     let res =  $pi*(c*c) ;
-    alert(`Area Circulo ${res}`);
+    alert(`Area del Circulo ${res}`);
 }
 
 btnCua4.addEventListener('click', AreaCir);
@@ -65,7 +65,7 @@ function PerRect() {
     let b = base.value;
 
     let res = 2*c+2*b;
-    alert(`Perimetro Rectangulo ${res}`);
+    alert(`Perimetro del Rectangulo ${res}`);
 }
 
 btnCua5.addEventListener('click', PerRect);
@@ -81,7 +81,7 @@ function AreaRect() {
     let b = base.value;
 
     let res = c*b;
-    alert(`Area Rectangulo ${res}`);
+    alert(`Area del Rectangulo ${res}`);
 }
 
 btnCua6.addEventListener('click', AreaRect);
@@ -99,7 +99,7 @@ function PerTrian() {
     let t = parseInt(lt3.value);
 
     let res = c+b+t;
-    alert(`Perimetro Triangulo ${res}`);
+    alert(`Perimetro del Triangulo ${res}`);
 }
 
 btnCua7.addEventListener('click', PerTrian);
@@ -116,7 +116,7 @@ function AreaTrian() {
   
 
     let res = c * b 
-    alert(`Area Triangulo ${res}`);
+    alert(`Area del Triangulo ${res}`);
 }
 
 btnCua8.addEventListener('click', AreaTrian);
