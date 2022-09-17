@@ -13,7 +13,7 @@ function letras() {
     let l = pa.value.length;
     //alert(`La longitud de la palabra ${a} es ${l}`);
     console.info(`La longitud de la palabra ${a} es ${l}`);
-    Swal.fire( `La longitud de la palabra ${a} es ${l}` )
+    Swal.fire( `La longitud de la palabra ${a} es ${l}` ) 
 }
 lon.addEventListener('click', letras);
 

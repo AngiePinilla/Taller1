@@ -5,7 +5,7 @@ let cermodal9 = document.querySelector(".cerrarModal9");
 btnmodal9.addEventListener('click', () => {
     venmodal9.style.display = "block";
 })
-cermodal9.addEventListener("click", () => {
+cermodal9.addEventListener("click", () => { 
     venmodal9.style.display = "none";
 })
 window.addEventListener("click", (e) => {
@@ -26,11 +26,13 @@ console.log(inputs);
 console.log(btn);
 
 const expresiones = {
+
     documento: /^\d{7,14}$/,
 	nombre: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
 	apellido: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras y espacios, pueden llevar acentos.
-    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-    password: /^.{4,12}$/, // 4 a 12 digitos.
+    fecha: /^(1[0-2]|0?[1-9])\/(3[01]|[12][0-9]|0?[1-9])\/(?:[0-9]{2})?[0-9]{2}$/,
+	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+    password: /^.{4,12}$/ // 4 a 12 digitos.
 	
 }
 
@@ -38,6 +40,7 @@ const campos = {
 	documento: false,
 	nombre: false,
 	apellido: false,
+	fecha: false,
 	correo: false,
 	password: false
 }
@@ -54,6 +57,10 @@ const validarFormulario = (e) => {
 		break;
         case "apellido":
 			validarCampo(expresiones.apellido, e.target, 'apellido');
+            console.log(validarCampo)
+			break;
+		case "fecha":
+			validarCampo(expresiones.fecha, e.target, 'fecha');
             console.log(validarCampo)
 		break;
         case "correo":
@@ -121,7 +128,7 @@ formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	const terminos = document.getElementById('terminos');
-	if(campos.usuario && campos.nombre && campos.password && campos.correo && campos.telefono && terminos.checked ){
+	if(campos.documento && campos.nombre && campos.apellido && campos.fecha && campos.correo && campos.password && terminos.checked ){
 		formulario.reset();
 
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');

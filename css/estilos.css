@@ -20,54 +20,8 @@ body {
     justify-content: space-around;
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 300px) {
     /*BARRA DE NAVEGACION MODILE*/
-
-
-
-    .item {
-        padding: 1rem;
-    }
-
-    .logo {
-        background-color: var(--cafeclaro);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-right: 1em;
-    }
-
-    .logo img {
-        width: 40%;
-        max-width: 200px;
-    }
-
-
-
-    .logo i {
-        color: var(--fondo);
-        font-size: 2rem;
-    }
-
-
-
-    .menu {
-        background-color: #bf9780d1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: transform .6s ease;
-    }
-
-    .menu-hr {
-        width: 90%;
-        border-color: var(--fondo);
-    }
-
-    .item {
-        padding: 1rem;
-    }
 
 
 
@@ -79,30 +33,33 @@ body {
         font-size: 1.2em;
     }
 
-    /* nav a:hover {
-        background-color: #0B3860;
-        width: 100%;
-    } */
+    .dropdown-item {
+        color: var(--cafeoscuro);
+    }
 
-    .navbar-button {
-        background-color: transparent;
-        border: none;
-        border-radius: 3px;
-        font-size: 1em;
-        padding: 0.5rem;
-        font-family: 'Marcellus', serif;
+    .dropdown-item:hover {
+        background-color: var(--rosa);
         color: var(--fondo);
     }
 
-    nav {
-        top: 0;
-        font-family: 'Marcellus', serif;
-        font-size: 1.3em;
-        position: fixed;
-        width: 100%;
-        z-index: 1;
+    .navbar navbar-expand-lg navbar-light bg-light {
+        background-color: var(--fondo);
+    }
+
+    .nav-link {
+        border-radius: 5px;
+        color: var(--fondo);
 
     }
+
+    .nav-link:hover {
+        background-color: var(--fondo);
+        color: var(--cafeoscuro);
+    }
+
+
+
+
 
     .ocultar {
         transform: translateY(-100em);
@@ -118,12 +75,12 @@ body {
         border-radius: 1em;
         padding: 0.5em;
     }
-    
+
     .redi a {
         text-decoration: none;
         font-family: 'Albert Sans', sans-serif;
     }
-    
+
     .palabras {
         display: flex;
         margin-top: 3em;
@@ -133,31 +90,31 @@ body {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .palabras-enunciado {
         display: flex;
         flex-direction: column;
         width: 85%;
         margin-top: 1em;
     }
-    
+
     .palabras-enunciado p {
         font-family: 'Albert Sans', sans-serif;
         font-size: 1.2em;
         text-align: center;
     }
-    
+
     .palabras-enunciado hr {
         margin: 1em;
         margin-top: 1.5em;
         border-color: var(--cafeoscuro);
     }
-    
+
     .palabras-formulario {
         display: flex;
         margin: 1em;
     }
-    
+
     .palabras-input {
         display: flex;
         flex-direction: column;
@@ -165,19 +122,19 @@ body {
         align-items: center;
         width: 20em;
     }
-    
+
     label {
         font-family: 'Albert Sans', sans-serif;
         font-size: 1.5em;
         margin-bottom: 0.5em;
     }
-    
+
     .palabras-input label {
         font-family: 'Albert Sans', sans-serif;
         font-size: 1.5em;
         margin-bottom: 0.5em;
     }
-    
+
     .palabras-input input {
         width: 80%;
         height: 2em;
@@ -185,15 +142,15 @@ body {
         border: none;
         outline: none;
     }
-    
+
     .palabras-botones {
         display: flex;
         flex-direction: column;
         padding-right: 1.5em;
         padding-left: 1.5em;
     }
-    
-    .palabras-botones button {
+
+    .palabras-botones .button {
         margin: 0.5em;
         height: 2.5em;
         border-radius: 8px;
@@ -203,10 +160,10 @@ body {
         border: none;
         background-color: var(--rosa);
     }
-    
+
     /*PALABRAS*/
 }
-
+/*-----------------------------------------------------------------------------------------------
 @media screen and (min-width: 1024px) {
 
     /*BARRA DE NAVEGACION DESKTOP*/
@@ -264,12 +221,12 @@ body {
         border-radius: 1em;
         padding: 0.5em;
     }
-    
+
     .redi a {
         text-decoration: none;
         font-family: 'Albert Sans', sans-serif;
     }
-    
+
     .palabras {
         display: flex;
         margin-top: 3em;
@@ -279,31 +236,31 @@ body {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .palabras-enunciado {
         display: flex;
         flex-direction: column;
         width: 85%;
         margin-top: 1em;
     }
-    
+
     .palabras-enunciado p {
         font-family: 'Albert Sans', sans-serif;
         font-size: 1.2em;
         text-align: center;
     }
-    
+
     .palabras-enunciado hr {
         margin: 1em;
         margin-top: 1.5em;
         border-color: var(--cafeoscuro);
     }
-    
+
     .palabras-formulario {
         display: flex;
         margin: 1em;
     }
-    
+
     .palabras-input {
         display: flex;
         flex-direction: column;
@@ -311,19 +268,19 @@ body {
         align-items: center;
         width: 20em;
     }
-    
+
     label {
         font-family: 'Albert Sans', sans-serif;
         font-size: 1.5em;
         margin-bottom: 0.5em;
     }
-    
+
     .palabras-input label {
         font-family: 'Albert Sans', sans-serif;
         font-size: 1.5em;
         margin-bottom: 0.5em;
     }
-    
+
     .palabras-input input {
         width: 80%;
         height: 2em;
@@ -331,15 +288,15 @@ body {
         border: none;
         outline: none;
     }
-    
+
     .palabras-botones {
         display: flex;
         flex-direction: column;
         padding-right: 1.5em;
         padding-left: 1.5em;
     }
-    
-    .palabras-botones button {
+
+    .palabras-botones .button {
         margin: 0.5em;
         height: 2.5em;
         border-radius: 8px;
@@ -347,9 +304,9 @@ body {
             sans-serif;
         font-size: 1em;
         border: none;
-        background-color: var(--rosa);
+        background-color: var(--crema);
     }
-    
+
     /*PALABRAS*/
 
 
@@ -358,7 +315,7 @@ body {
 
 .contenido {
     background-color: var(--cafeoscuro);
-    margin-top: 5em;
+   
     padding: 1em;
     border-radius: 1em;
 }
@@ -705,20 +662,20 @@ label {
 
 }
 
-.formulario__grupo{
+.formulario__grupo {
     padding: 1em;
 }
 
 
 
 .formulario__label {
-	font-family: 'Albert Sans', sans-serif;
+    font-family: 'Albert Sans', sans-serif;
     font-size: 1.2em;
     margin-bottom: 0.5em;
 }
 
 .formulario__grupo-input {
-	position: relative;
+    position: relative;
 }
 
 .formulario__input {
@@ -733,61 +690,61 @@ label {
 }
 
 .formulario__input:focus {
-	border: 3px solid #0075FF;
-	outline: none;
-	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
 
 .formulario__input-error {
-	font-size: 1em;
-	margin-bottom: 0;
-	display: none;
+    font-size: 1em;
+    margin-bottom: 0;
+    display: none;
 }
 
 .formulario__input-error-activo {
-	display: block;
+    display: block;
 }
 
 .formulario__validacion-estado {
-	position: absolute;
-	right: 10px;
-	bottom: 15px;
-	z-index: 100;
-	font-size: 16px;
-	opacity: 0;
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
 }
 
 .formulario__checkbox {
-	margin-right: 10px;
+    margin-right: 10px;
 }
 
-.formulario__grupo-terminos, 
+.formulario__grupo-terminos,
 .formulario__mensaje,
 .formulario__grupo-btn-enviar {
-	grid-column: span 2;
+    grid-column: span 2;
 }
 
 .formulario__mensaje {
-	height: 45px;
-	line-height: 45px;
-	background: #F66060;
-	padding: 0 15px;
-	border-radius: 3px;
-	display: none;
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
 }
 
 .formulario__mensaje-activo {
-	display: block;
+    display: block;
 }
 
 .formulario__mensaje p {
-	margin: 0;
+    margin: 0;
 }
 
 .formulario__grupo-btn-enviar {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .formulario__btn {
@@ -803,37 +760,37 @@ label {
 }
 
 .formulario__btn:hover {
-	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
 }
 
 .formulario__mensaje-exito {
-	font-size: 14px;
-	color: #119200;
-	display: none;
+    font-size: 14px;
+    color: #119200;
+    display: none;
 }
 
 .formulario__mensaje-exito-activo {
-	display: block;
+    display: block;
 }
 
 
 /* ----- -----  Estilos para Validacion ----- ----- */
 .formulario__grupo-correcto .formulario__validacion-estado {
-	color: #1ed12d;
-	opacity: 1;
+    color: #1ed12d;
+    opacity: 1;
 }
 
 .formulario__grupo-incorrecto .formulario__label {
-	color: #bb2929;
+    color: #bb2929;
 }
 
 .formulario__grupo-incorrecto .formulario__validacion-estado {
-	color: #bb2929;
-	opacity: 1;
+    color: #bb2929;
+    opacity: 1;
 }
 
 .formulario__grupo-incorrecto .formulario__input {
-	border: 3px solid #bb2929;
+    border: 3px solid #bb2929;
 }
 
 
