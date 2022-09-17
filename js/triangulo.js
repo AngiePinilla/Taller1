@@ -14,17 +14,37 @@ function CalTriangulo() {
 
     if (l1 == l2 && l1 == l3 && l2 == l3) {
 
-        alert(`Es un equilatero`)
+        //alert(`Es un equilatero`)
+        Swal.fire(
+            'Good job!',
+            'Es un equilatero'
+        )
 
     } else if (l1 == l2 && l2 !== l3 || l1 == l3 && l1 !== l2 || l2 == l3 && l3 !== l1) {
 
-        alert(`Es un isoceles`)
+        
+        Swal.fire(
+            'Good job!',
+            'Es un isoceles'
+        )
 
     } else if (l1 !== l2 && l1 !== l3 && l2 !== l3) {
-        alert(`Es un escaleno`)
+        //alert(`Es un escaleno`)
+        Swal.fire(
+            'Good job!',
+            'Es un escaleno'
+        )
     }
+    
+    
+    
     else {
-        alert("no valido")
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Vuelve a intentar',
+
+        })
     }
 
 }

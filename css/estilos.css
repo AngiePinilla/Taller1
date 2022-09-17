@@ -20,8 +20,16 @@ body {
     justify-content: space-around;
 }
 
+.contenido {
+    background-color: var(--cafeoscuro);
+
+    padding: 1em;
+    border-radius: 1em;
+}
+
 @media only screen and (min-width: 300px) {
     /*BARRA DE NAVEGACION MODILE*/
+
 
 
 
@@ -163,56 +171,14 @@ body {
 
     /*PALABRAS*/
 }
-/*-----------------------------------------------------------------------------------------------
-@media screen and (min-width: 1024px) {
+
+/*-----------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1024px) {
+
+
 
     /*BARRA DE NAVEGACION DESKTOP*/
-    nav {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-between;
-        background-color: var(--crema);
-
-    }
-
-    nav a {
-        color: var(--cafeoscuro);
-        font-family: 'Fredoka One', cursive;
-        font-size: 1.2em;
-    }
-
-    .logo {
-        background-color: var(--crema);
-    }
-
-    .logo img {
-        width: 100%;
-        max-width: 180px;
-    }
-
-    .logo i {
-        display: none;
-    }
-
-    .menu {
-        background-color: var(--crema);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        transform: translateY(0);
-    }
-
-    .menu-hr {
-        display: none;
-    }
-
-    .menu a:hover {
-        background-color: var(--rosa);
-        color: var(--fondo);
-        border-radius: 8px;
-    }
 
 
     .redi {
@@ -244,11 +210,7 @@ body {
         margin-top: 1em;
     }
 
-    .palabras-enunciado p {
-        font-family: 'Albert Sans', sans-serif;
-        font-size: 1.2em;
-        text-align: center;
-    }
+
 
     .palabras-enunciado hr {
         margin: 1em;
@@ -304,138 +266,116 @@ body {
             sans-serif;
         font-size: 1em;
         border: none;
-        background-color: var(--crema);
+        background-color: var(--cafeclaro);
     }
 
     /*PALABRAS*/
 
 
 
+
+    .inicio-botones {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .inicio-botones .ini {
+        margin: 0.5em;
+        height: 2.5em;
+        border-radius: 8px;
+        font-family: 'Fredoka One', cursive;
+        font-size: 1em;
+        border: none;
+        background-color: var(--rosa);
+        text-decoration: none;
+        text-align: center;
+        width: 15em;
+    }
+
+    /*PALABRAS*/
+
+
+
+    .redi {
+        display: none;
+        background-color: var(--crema);
+        border-radius: 1em;
+        padding: 0.5em;
+    }
+
+    .redi a {
+        text-decoration: none;
+        font-family: 'Albert Sans', sans-serif;
+    }
+
+    .palabras {
+        display: flex;
+        margin-top: 3em;
+        background-color: var(--crema);
+        padding: 1.5em;
+        border-radius: 1em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .palabras-enunciado {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin-top: 1em;
+    }
+
+    .palabras-enunciado p {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .palabras-enunciado hr {
+        margin: 1em;
+        margin-top: 1.5em;
+        border-color: var(--cafeoscuro);
+    }
+
+    .palabras-formulario {
+        display: flex;
+        margin: 1em;
+    }
+
+    .palabras-input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+        align-items: center;
+        width: 20em;
+    }
+
+    label {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .palabras-input label {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .palabras-input input {
+        width: 80%;
+        height: 2em;
+        border-radius: 0.3em;
+        border: none;
+        outline: none;
+    }
+
+    
+
+    /*PALABRAS*/
 }
-
-.contenido {
-    background-color: var(--cafeoscuro);
-   
-    padding: 1em;
-    border-radius: 1em;
-}
-
-
-.inicio-botones {
-    display: flex;
-    flex-direction: column;
-
-
-}
-
-.inicio-botones .ini {
-    margin: 0.5em;
-    height: 2.5em;
-    border-radius: 8px;
-    font-family: 'Fredoka One', cursive;
-    font-size: 1em;
-    border: none;
-    background-color: var(--rosa);
-    text-decoration: none;
-    text-align: center;
-    width: 15em;
-}
-
-/*PALABRAS*/
-
-.redi {
-    display: none;
-    background-color: var(--crema);
-    border-radius: 1em;
-    padding: 0.5em;
-}
-
-.redi a {
-    text-decoration: none;
-    font-family: 'Albert Sans', sans-serif;
-}
-
-.palabras {
-    display: flex;
-    margin-top: 3em;
-    background-color: var(--crema);
-    padding: 1.5em;
-    border-radius: 1em;
-    flex-direction: column;
-    align-items: center;
-}
-
-.palabras-enunciado {
-    display: flex;
-    flex-direction: column;
-    width: 85%;
-    margin-top: 1em;
-}
-
-.palabras-enunciado p {
-    font-family: 'Albert Sans', sans-serif;
-    font-size: 1.5em;
-    text-align: center;
-}
-
-.palabras-enunciado hr {
-    margin: 1em;
-    margin-top: 1.5em;
-    border-color: var(--cafeoscuro);
-}
-
-.palabras-formulario {
-    display: flex;
-    margin: 1em;
-}
-
-.palabras-input {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
-    align-items: center;
-    width: 20em;
-}
-
-label {
-    font-family: 'Albert Sans', sans-serif;
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-}
-
-.palabras-input label {
-    font-family: 'Albert Sans', sans-serif;
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-}
-
-.palabras-input input {
-    width: 80%;
-    height: 2em;
-    border-radius: 0.3em;
-    border: none;
-    outline: none;
-}
-
-.palabras-botones {
-    display: flex;
-    flex-direction: column;
-    padding-right: 1.5em;
-    padding-left: 1.5em;
-}
-
-.palabras-botones button {
-    margin: 0.5em;
-    height: 2.5em;
-    border-radius: 8px;
-    font-family: 'Albert Sans',
-        sans-serif;
-    font-size: 1em;
-    border: none;
-    background-color: var(--rosa);
-}
-
-/*PALABRAS*/
 
 /*TEMPERATURA*/
 .temperatura-input {
