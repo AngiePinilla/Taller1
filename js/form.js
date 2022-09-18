@@ -26,17 +26,18 @@ console.log(inputs);
 console.log(btn);
 
 const expresiones = {
-
+	tipo: /^[a-zA-Z]{6,7}$/,
     documento: /^\d{7,14}$/,
-	nombre: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
-	apellido: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras y espacios, pueden llevar acentos.
-    fecha: /^(1[0-2]|0?[1-9])\/(3[01]|[12][0-9]|0?[1-9])\/(?:[0-9]{2})?[0-9]{2}$/,
+	nombre: /^[a-zA-Z0-9\_\- ]{4,16}$/, // Letras, numeros, guion y guion_bajo
+	apellido: /^[a-zA-Z0-9\_\- ]{4,16}$/, // Letras y espacios, pueden llevar acentos.
+	fecha: /^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/,
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     password: /^.{4,12}$/ // 4 a 12 digitos.
 	
 }
 
 const campos = {
+	tipo: false,
 	documento: false,
 	nombre: false,
 	apellido: false,
@@ -47,6 +48,10 @@ const campos = {
 
 const validarFormulario = (e) => {
 	switch (e.target.name) {
+		case "tipo":
+			validarCampo(expresiones.tipo, e.target, 'tipo');
+			console.log(validarCampo)
+			break;
 		case "documento":
 			validarCampo(expresiones.documento, e.target, 'documento');
             console.log(validarCampo)
@@ -128,7 +133,8 @@ formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	const terminos = document.getElementById('terminos');
-	if(campos.documento && campos.nombre && campos.apellido && campos.fecha && campos.correo && campos.password && terminos.checked ){
+	const tipo = document.getElementById('tipo');
+	if (campos.documento && campos.nombre && campos.apellido && campos.fecha && campos.correo && campos.password && terminos.checked && tipo.selected ){
 		formulario.reset();
 
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');

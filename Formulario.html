@@ -60,9 +60,7 @@
         <div class="palabras">
             <div class="palabras-enunciado">
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
-                    natus optio commodi? Repudiandae dolores, illum facere temporibus
-                    voluptates asperiores est
+                   Formulario con validaciones de JavaScript
                 </p>
                 <hr />
             </div>
@@ -76,16 +74,16 @@
                                 <label for="tipo" class="formulario__label">Tipo de documento</label>
 
                                 <div class="formulario__grupo-input">
-                                    <select class="seleccionar2" class="formulario__input" name="tipo" id="tipo">
-                                        <option value="0">seleccione</option>
-                                        <option value="1">Tarjeta de identidad</option>
-                                        <option value="2">Cedula de ciudadania</option>
+
+                                    <select class="seleccionar2" class="formulario__input" >
+                                        <option>seleccione</option>
+                                        <option name="tipo" id="tipo" value="1">Tarjeta de identidad</option>
+                                        <option name="tipo" id="tipo" value="2">Cedula de ciudadania</option>
                                     </select>
+
                                 </div>
 
-                                <p class="formulario__input-error">
-                                    Seleccione una opcion
-                                </p>
+                            
 
                             </div>
 
@@ -208,10 +206,13 @@
                     </div>
 
                     <div class="formulario__grupo formulario__grupo-btn-enviar">
+
                         <button type="submit" class="formulario__btn">Enviar</button>
+
                         <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
                             Formulario enviado exitosamente!
                         </p>
+
                     </div>
                 </form>
             </div>
@@ -232,7 +233,7 @@
         </div>
     </div>
 
-    <script src="js/form.js"></script>
+    <script src="js/form.js"></script> 
 
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
