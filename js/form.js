@@ -27,12 +27,12 @@ console.log(btn);
 
 const expresiones = {
 	tipo: /^[a-zA-Z]{6,7}$/,
-    documento: /^\d{7,14}$/,
+    documento: /^\d{6,10}$/,
 	nombre: /^[a-zA-Z0-9\_\- ]{4,16}$/, // Letras, numeros, guion y guion_bajo
 	apellido: /^[a-zA-Z0-9\_\- ]{4,16}$/, // Letras y espacios, pueden llevar acentos.
 	fecha: /^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/,
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-    password: /^.{4,12}$/ // 4 a 12 digitos.
+    password: /^.{4,6}$/ // 4 a 12 digitos.
 	
 }
 

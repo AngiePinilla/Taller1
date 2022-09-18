@@ -7,7 +7,7 @@ let Car = document.getElementById("Car");
 
 console.log(pa)
 console.log(lon) 
-
+ 
 function letras() {
     let a = pa.value;
     let l = pa.value.length;
