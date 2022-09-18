@@ -22,7 +22,7 @@ body {
 
 .contenido {
     background-color: var(--cafeoscuro);
-
+    margin-top: 1em;
     padding: 1em;
     border-radius: 1em;
 }
@@ -65,9 +65,17 @@ body {
         color: var(--cafeoscuro);
     }
 
+    .navbar-toggler{
+        background-color: var(--fondo);
+        
+    }
 
-
-
+    .navbar-toggler-icon{
+        color: var(--cafeoscuro);
+        background-color: var(--cafeoscuro);
+        border-radius: 5px;
+        width: 1.5em;
+    }
 
     .ocultar {
         transform: translateY(-100em);
@@ -170,11 +178,224 @@ body {
     }
 
     /*PALABRAS*/
+
+    .inicio-botones {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .inicio-botones .ini {
+        margin: 0.5em;
+        height: 2.5em;
+        border-radius: 8px;
+        font-family: 'Fredoka One', cursive;
+        font-size: 1em;
+        border: none;
+        background-color: var(--rosa);
+        text-decoration: none;
+        text-align: center;
+        width: 15em;
+    }
+
+    .navbar-toggler {
+        color: var(--cafeoscuro);
+    }
+
+    
+
+
+    /*FIGURAS*/
+
+    .figuras-formulario {
+        display: flex;
+    }
+
+    .figuras-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .figura-card {
+        margin: 1em;
+    }
+
+    .fig1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+    /*FIGURAS*/
+
+    /*MODAL*/
+
+    .modal {
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow: auto;
+        padding-top: 200px;
+        display: none;
+    }
+
+    .contenidoModal {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--cafeclaro);
+        width: 60%;
+        margin: auto;
+        position: relative;
+        padding: 1rem;
+        border-radius: 10px;
+        animation-name: animarmodal;
+        animation-duration: 0.5s;
+    }
+
+    .contenidoModal label {
+        font-size: 1rem;
+    }
+
+    .contenidoModal input {
+        margin: 0.5em;
+        width: 100%;
+        height: 2em;
+        border-radius: 0.3em;
+        border: none;
+        outline: none;
+        align-self: center;
+    }
+
+    @keyframes animarmodal {
+        from {
+            top: -300px;
+
+            opacity: 0;
+        }
+
+        to {
+            top: 0;
+            opacity: 1;
+        }
+    }
+
+    .cerrarModal {
+        font-size: 2rem;
+        float: right;
+    }
+
+    .cerrarModal:hover {
+        cursor: pointer;
+    }
+
+    .contenidoModal h2 {
+        background-color: var(--cafeoscuro);
+        border-radius: 10px;
+        color: #FFFFFF;
+        padding: 1rem 0;
+        text-align: center;
+        clear: both;
+        font-size: 1em;
+    }
+
+    .contenidoModal h2 span {
+        padding-right: 1em;
+        font-size: 1em;
+    }
+
+    .contenidoModal button {
+        margin: 0.5em;
+        height: 2.5em;
+        border-radius: 8px;
+        font-family: 'Albert Sans',
+            sans-serif;
+        font-size: 1em;
+        border: none;
+        background-color: var(--rosa);
+        width: 50%;
+        align-self: center;
+    }
+
+    /*FORMULARIO*/
+
+    .datos-formulario {
+        display: flex;
+        margin-top: 2em;
+    }
+
+    .datos-form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .datos-input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+        align-items: center;
+        width: 15em;
+    }
+
+    .datos-input label {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+    }
+
+    .datos-input input {
+        width: 80%;
+        height: 2em;
+        border-radius: 0.3em;
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1em;
+    }
+
+    .columna {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 1em;
+    }
+
+    .datos-input-aceptar {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1em;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .datos-input-aceptar label {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+    }
+
+    .datos-input-aceptar input {
+        width: 20%;
+        height: 2em;
+        border-radius: 0.3em;
+        border: none;
+        outline: none;
+    }
 }
 
 /*-----------------------------------------------------------------------------------------------*/
 
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 
 
 
@@ -372,9 +593,188 @@ body {
         outline: none;
     }
 
-    
+    /*MODAL*/
 
-    /*PALABRAS*/
+    .modal {
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow: auto;
+        padding-top: 200px;
+        display: none;
+    }
+
+    .contenidoModal {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--cafeclaro);
+        width: 60%;
+        margin: auto;
+        position: relative;
+        padding: 1rem;
+        border-radius: 10px;
+        animation-name: animarmodal;
+        animation-duration: 0.5s;
+    }
+
+    .contenidoModal input {
+        margin: 0.5em;
+        width: 50%;
+        height: 2em;
+        border-radius: 0.3em;
+        border: none;
+        outline: none;
+    }
+
+    @keyframes animarmodal {
+        from {
+            top: -300px;
+
+            opacity: 0;
+        }
+
+        to {
+            top: 0;
+            opacity: 1;
+        }
+    }
+
+    .cerrarModal {
+        font-size: 2rem;
+        float: right;
+    }
+
+    .cerrarModal:hover {
+        cursor: pointer;
+    }
+
+    .contenidoModal h2 {
+        background-color: var(--cafeoscuro);
+        border-radius: 10px;
+        color: #FFFFFF;
+        padding: 1rem 0;
+        text-align: center;
+        clear: both;
+    }
+
+    .contenidoModal h2 span {
+        padding-right: 1em;
+    }
+
+    .contenidoModal button {
+        margin: 0.5em;
+        height: 2.5em;
+        border-radius: 8px;
+        font-family: 'Albert Sans',
+            sans-serif;
+        font-size: 1em;
+        border: none;
+        background-color: var(--rosa);
+        width: 50%;
+        align-self: center;
+    }
+
+
+    /*FIGURAS*/
+
+    .figuras-formulario {
+        display: flex;
+    }
+
+    .figuras-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .figura-card {
+        margin: 1em;
+    }
+
+    .fig1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+    /*FIGURAS*/
+
+
+    /*FORMULARIO*/
+
+    .datos-formulario {
+        display: flex;
+        margin-top: 2em;
+    }
+
+    .datos-form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .datos-input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+        align-items: center;
+        width: 15em;
+    }
+
+    .datos-input label {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+    }
+
+    .datos-input input {
+        width: 80%;
+        height: 2em;
+        border-radius: 0.3em;
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1em;
+    }
+
+    .columna {
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 1em;
+    }
+
+    .datos-input-aceptar {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1em;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .datos-input-aceptar label {
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+    }
+
+    .datos-input-aceptar input {
+        width: 20%;
+        height: 2em;
+        border-radius: 0.3em;
+        border: none;
+        outline: none;
+    }
+
+
 }
 
 /*TEMPERATURA*/
@@ -491,98 +891,7 @@ body {
 
 /*PROFES*/
 
-/*FIGURAS*/
 
-.figuras-formulario {
-    display: flex;
-}
-
-.figuras-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.figura-card {
-    margin: 1em;
-}
-
-.fig1 {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/*FIGURAS*/
-
-/*FORMULARIO*/
-
-.datos-formulario {
-    display: flex;
-    margin-top: 2em;
-}
-
-.datos-form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.datos-input {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
-    align-items: center;
-    width: 15em;
-}
-
-.datos-input label {
-    font-family: 'Albert Sans', sans-serif;
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-}
-
-.datos-input input {
-    width: 80%;
-    height: 2em;
-    border-radius: 0.3em;
-    border: none;
-    outline: none;
-    padding: 10px;
-    font-family: 'Albert Sans', sans-serif;
-    font-size: 1em;
-}
-
-.columna {
-    display: flex;
-    width: 40%;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-right: 1em;
-}
-
-.datos-input-aceptar {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 1em;
-    align-items: center;
-    width: 100%;
-
-}
-
-.datos-input-aceptar label {
-    font-family: 'Albert Sans', sans-serif;
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-}
-
-.datos-input-aceptar input {
-    width: 20%;
-    height: 2em;
-    border-radius: 0.3em;
-    border: none;
-    outline: none;
-}
 
 #grupo__terminos {
     display: flex;
@@ -665,7 +974,7 @@ body {
 }
 
 .formulario__mensaje {
-    height: 45px;
+  
     line-height: 45px;
     background: #F66060;
     padding: 0 15px;
@@ -738,89 +1047,7 @@ body {
 /*FORMULARIO*/
 
 
-/*MODAL*/
 
-.modal {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow: auto;
-    padding-top: 200px;
-    display: none;
-}
-
-.contenidoModal {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--cafeclaro);
-    width: 60%;
-    margin: auto;
-    position: relative;
-    padding: 1rem;
-    border-radius: 10px;
-    animation-name: animarmodal;
-    animation-duration: 0.5s;
-}
-
-.contenidoModal input {
-    margin: 0.5em;
-    width: 50%;
-    height: 2em;
-    border-radius: 0.3em;
-    border: none;
-    outline: none;
-}
-
-@keyframes animarmodal {
-    from {
-        top: -300px;
-
-        opacity: 0;
-    }
-
-    to {
-        top: 0;
-        opacity: 1;
-    }
-}
-
-.cerrarModal {
-    font-size: 2rem;
-    float: right;
-}
-
-.cerrarModal:hover {
-    cursor: pointer;
-}
-
-.contenidoModal h2 {
-    background-color: var(--cafeoscuro);
-    border-radius: 10px;
-    color: #FFFFFF;
-    padding: 1rem 0;
-    text-align: center;
-    clear: both;
-}
-
-.contenidoModal h2 span {
-    padding-right: 1em;
-}
-
-.contenidoModal button {
-    margin: 0.5em;
-    height: 2.5em;
-    border-radius: 8px;
-    font-family: 'Albert Sans',
-        sans-serif;
-    font-size: 1em;
-    border: none;
-    background-color: var(--rosa);
-    width: 50%;
-    align-self: center;
-}
 
 .cerrarModal2 {
     font-size: 2rem;
